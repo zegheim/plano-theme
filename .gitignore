@@ -3,3 +3,6 @@
 
 # Ignore meson build directory
 build
+
+# Ignore VSCode workspace settings
+.vscode
