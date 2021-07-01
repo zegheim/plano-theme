@@ -1,4 +1,4 @@
-plano_dark_xfwm4_theme_dir = join_paths(get_option('datadir'), 'themes', meson.project_name()+'-dark-titlebar')
+plano_dark_xfwm4_theme_dir = join_paths('.themes', meson.project_name()+'-dark-titlebar')
 
 # destination directory
 install_dir = join_paths(plano_dark_xfwm4_theme_dir , 'xfwm4')

@@ -25,12 +25,12 @@ Other distros may have named the above packages differently.
 
 When the above requirements are installed, simply run these commands:
 ```bash
-git clone https://github.com/lassekongo83/plano-theme.git
+git clone git@github.com:zegheim/plano-theme.git
 cd plano-theme
-meson build
-sudo ninja -C build install
+meson build --prefix /home/zegheim
+ninja -C build install
 ```
-The theme(s) will be installed in: `/usr/share/themes/`
+The theme(s) will be installed in: `/home/zegheim/.themes/`
 
 ### Updating the theme
 
@@ -39,7 +39,7 @@ Navigate to the `plano-theme` folder that was originally cloned. (If you removed
 Then simply run:
 ```bash
 git pull
-sudo ninja -C build install
+ninja -C build install
 ```
 
 #### Changing themes
@@ -72,7 +72,7 @@ The theme will be used if the included GTK version for the Flatpak app is at 3.2
 
 To be safe from any gnome-shell crashes or weird behavior, change the gnome-shell theme to another one before running the command below.
 
-Run `sudo rm -r /usr/share/themes/Plano*`
+Run `rm -r /home/zegheim/.themes/Plano*`
 
 ## Copying or Reusing
 

@@ -1,4 +1,4 @@
-theme_dir = join_paths(get_option('datadir'), 'themes', meson.project_name())
+theme_dir = join_paths('.themes', meson.project_name())
 
 conf_data = configuration_data()
 conf_data.set('ThemeName', meson.project_name())

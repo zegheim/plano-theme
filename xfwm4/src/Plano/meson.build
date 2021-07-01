@@ -1,4 +1,4 @@
-plano_xfwm4_theme_dir = join_paths(get_option('datadir'), 'themes', meson.project_name())
+plano_xfwm4_theme_dir = join_paths('.themes', meson.project_name())
 
 # destination directory
 install_dir = join_paths(plano_xfwm4_theme_dir , 'xfwm4')
