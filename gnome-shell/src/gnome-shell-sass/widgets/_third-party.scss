@@ -1,5 +1,18 @@
 // 3rd party extensions styling
 
+// Pop Shell Launcher
+
+.pop-shell-search-list {
+  // This hack overrides the style applied on the currently
+  // focused search result, providing better contrast.
+  background-color: $selected_bg_color;
+  color: $bg_color;
+  & .pop-shell-search-element {
+    background-color: $bg_color;
+    color: $fg_color;
+  }
+}
+
 // Dash to Panel
 
 @each $d in Top, Bottom {
